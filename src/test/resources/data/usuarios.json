@@ -1,0 +1,14 @@
+{
+  "crearUsuario": {
+    "name": "Carolina Castaño",
+    "username": "carocast",
+    "email": "carolina@test.com"
+  },
+
+  "actualizarUsuario": {
+    "id": 1,
+    "name": "Carolina Actualizada",
+    "username": "carolina2026",
+    "email": "carolina.actualizada@test.com"
+  }
+}
