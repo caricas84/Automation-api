@@ -230,6 +230,6 @@ Desde allí es posible visualizar:
 
 # Repositorio
 
-```
-https://github.com/caricas84/reto-api-karate
+```bash
+git clone https://github.com/caricas84/reto-api-karate
 ```
