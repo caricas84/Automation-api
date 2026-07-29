@@ -152,20 +152,6 @@ Validando:
 
 ---
 
-# Ejemplo de escenario
-
-```gherkin
-Feature: Consulta de usuario
-
-Scenario: Obtener usuario por ID
-
-Given url 'https://jsonplaceholder.typicode.com/users/1'
-When method GET
-Then status 200
-And match response.id == 1
-And match response.name == 'Leanne Graham'
-```
-
 ---
 
 # Ejecución del proyecto
