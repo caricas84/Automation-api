@@ -2,19 +2,21 @@ Feature: Creación de usuarios
 
 Background:
     * url baseUrl
-    * def usuarios = read('classpath:data/usuarios.json')
+    * def generator = call read('classpath:utils/generator.js')
 
 @Regression
 @Crear
 Scenario: Crear un usuario
 
+    * def nuevoUsuario = generator.user()
+
     Given path 'users'
-    And request usuarios.crearUsuario
+    And request nuevoUsuario
 
     When method POST
 
     Then status 201
 
-    And match response.name == usuarios.crearUsuario.name
-    And match response.username == usuarios.crearUsuario.username
-    And match response.email == usuarios.crearUsuario.email
+    And match response.name == nuevoUsuario.name
+    And match response.username == nuevoUsuario.username
+    And match response.email == nuevoUsuario.email
